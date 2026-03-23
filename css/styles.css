@@ -1,0 +1,118 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    border-radius: 2px;
+    justify-content: space-between;
+    background-color: rgba(167, 89, 21, 0.8);
+    gap:20px;
+    border: 1px solid black;
+    min-width:500px;
+    padding: 10px;
+    
+}
+nav {
+  margin-left: auto;
+  padding: 10px;
+}
+li a{
+   text-decoration: none;
+    color: inherit;
+}
+.hero{
+  background-image: url("https://images.unsplash.com/photo-1558060370-d644479cb6f7?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHRveXxlbnwwfHwwfHx8MA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+
+}
+.usuario-link {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* espacio entre imagen y nombre */
+  text-decoration: none;
+  color: black;
+}
+
+.usuario-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%; /* hace que sea redondo */
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.usuario-avatar:hover {
+  transform: scale(1.1); /* efecto al pasar el mouse */
+}
+.menu{
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.categories{
+  padding: 10px;
+  min-width: 200px;
+}
+.categories a {
+  display: flex;
+  text-align: center;
+  list-style: none;
+  flex-direction: column;
+  background-color: rgb(203, 203, 203);
+  border: 2px solid black;
+  min-height: 200px;
+  padding: 10px;
+  margin: 10px;
+}
+.categories img{
+  border: 1px solid black;
+  padding: 5px;
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.container{
+    font-style: italic;
+    color: rgb(1, 36, 39);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 20px;
+}
+.card{
+    background-color: rgb(211, 211, 211);
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px 1px black;
+    padding: 10px;
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+footer{
+  background-color: rgb(173, 166, 166);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid black;
+  min-height: 10vh;
+}
+footer a {
+  padding: 20px;
+}

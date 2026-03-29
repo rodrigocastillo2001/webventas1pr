@@ -35,10 +35,7 @@ li a{
   color: inherit;
 }
 .hero {
-  position: relative; /* CLAVE */
-  background-image: url("https://images.unsplash.com/photo-1558060370-d644479cb6f7?fm=jpg&q=60&w=3000&auto=format&fit=crop");
-  background-size: cover;
-  background-position: center;
+  position: relative;
   min-height: 100vh;
 }
 .usuario-link {
@@ -167,4 +164,34 @@ footer{
 }
 footer a {
   padding: 20px;
+}
+/*FONDO*/
+
+.bg-image {
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1558060370-d644479cb6f7?fm=jpg&q=60&w=3000&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.bg-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+/* para que el contenido esté por encima del fondo */
+.hero,
+.categories,
+.container {
+  position: relative;
+  z-index: 2;
+}
+.hero,
+.categories,
+.container {
+  position: relative;
+  z-index: 2;
 }
